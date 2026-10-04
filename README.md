@@ -46,7 +46,7 @@ Everything runs with bounded concurrency, retries, a resumable checkpoint and cl
 ## 🚀 Quick start
 
 ```bash
-git clone https://github.com/octra42/notegpt-harvester.git
+git clone https://github.com/0xgetz/notegpt-harvester.git
 cd notegpt-harvester
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -e .

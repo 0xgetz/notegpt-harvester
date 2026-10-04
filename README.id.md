@@ -32,7 +32,7 @@ Semua berjalan dengan konkurensi terbatas, retry, checkpoint yang bisa dilanjutk
 ## 🚀 Mulai cepat
 
 ```bash
-git clone https://github.com/octra42/notegpt-harvester.git
+git clone https://github.com/0xgetz/notegpt-harvester.git
 cd notegpt-harvester
 python -m venv .venv && source .venv/bin/activate
 pip install -e .

@@ -29,8 +29,8 @@ dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.6"]
 ngharvest = "notegpt_harvester.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/octra42/notegpt-harvester"
-Repository = "https://github.com/octra42/notegpt-harvester"
+Homepage = "https://github.com/0xgetz/notegpt-harvester"
+Repository = "https://github.com/0xgetz/notegpt-harvester"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/notegpt_harvester"]
