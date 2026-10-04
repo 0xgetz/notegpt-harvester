@@ -1,0 +1,21 @@
+# Secrets & local state
+config.toml
+harvest.state.json
+results/
+*.local.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="NoteGPT Harvester logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="0.55" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bg)"/>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="4"/>
+
+  <!-- document -->
+  <path d="M170 116h140l52 52v228a20 20 0 0 1-20 20H170a20 20 0 0 1-20-20V136a20 20 0 0 1 20-20z"
+        fill="#0b1220" fill-opacity="0.28"/>
+  <path d="M166 112h140l56 56v228a16 16 0 0 1-16 16H166a16 16 0 0 1-16-16V128a16 16 0 0 1 16-16z"
+        fill="#ffffff" fill-opacity="0.96"/>
+  <path d="M306 112l56 56h-56z" fill="#c7d2fe"/>
+  <!-- note lines -->
+  <rect x="184" y="228" width="148" height="14" rx="7" fill="#93c5fd"/>
+  <rect x="184" y="258" width="120" height="14" rx="7" fill="#bfdbfe"/>
+  <rect x="184" y="288" width="140" height="14" rx="7" fill="#bfdbfe"/>
+
+  <!-- harvest bolt / router node -->
+  <g filter="url(#soft)">
+    <path d="M256 300l-56 96h44l-20 76 84-116h-46l30-56z" fill="url(#bolt)"/>
+  </g>
+  <circle cx="368" cy="150" r="16" fill="#ffffff" fill-opacity="0.9"/>
+  <circle cx="140" cy="360" r="12" fill="#ffffff" fill-opacity="0.75"/>
+  <circle cx="386" cy="360" r="12" fill="#ffffff" fill-opacity="0.75"/>
+  <path d="M256 140h96M256 140l-104 210M256 140l118 208" stroke="#ffffff" stroke-opacity="0.35" stroke-width="4" stroke-dasharray="8 10"/>
+</svg>

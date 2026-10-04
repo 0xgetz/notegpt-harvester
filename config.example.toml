@@ -1,0 +1,43 @@
+# NoteGPT Harvester — example configuration
+# Copy to config.toml and edit. Every field can also be set via NGH_* env vars.
+
+[email]
+# Backend: "mailtm" (default, scriptable, no browser) or "zenvex" (needs a
+# browser-issued session cookie; set base_url and pass cookies via the code API).
+provider = "mailtm"
+api_url = "https://api.mail.tm"
+# Optional receiving domain. Empty = pick an active mail.tm domain automatically.
+domain = ""
+prefix = "ng"
+poll_interval = 3.0
+poll_timeout = 150.0
+
+[notegpt]
+base_url = "https://notegpt.io"
+# password = "Harvest#2026x"   # random when omitted
+password_length = 12
+verify_email = true
+
+[router9]
+enabled = true
+base_url = "http://localhost:20128"
+# api_key = "<9router management key, if enabled>"
+provider_id = "notegpt"
+provider_name = "NoteGPT"
+node_type = "openai-compatible"
+# NoteGPT's OpenAI-compatible gateway. Adjust if your instance exposes a
+# different path; the token is sent as the bearer key.
+openai_base_url = "https://notegpt.io/api/v2/openai/v1"
+prefix = "ng"
+create_node = true
+
+[run]
+count = 5
+concurrency = 3
+retries = 3
+retry_delay = 5.0
+# proxy = "http://user:pass@host:port"
+checkpoint_file = "harvest.state.json"
+results_dir = "results"
+log_level = "INFO"
+request_timeout = 30.0
